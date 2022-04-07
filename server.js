@@ -17,14 +17,6 @@ app.get('/', (req, res) => {
     res.render('main', { ListaProductos: productos });
 });
 
-// app.get('/', (req, res) => {
-//     let vacia = false
-//     if(productos.length = 0){
-//         vacia = true
-//     }
-//     res.render('hello.pug', { ListaProductos: productos, ListaVacia: vacia });
-// });
-
 app.get('/productos', (req, res) => {
     res.redirect('/')
 });
